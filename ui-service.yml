@@ -33,7 +33,7 @@ zuul:
           serviceId: gateway-service
   add-proxy-headers: true
 
-hystrix.command.default.execution.timeout.enabled = false
+hystrix:command.default.execution.timeout.enabled: false
 #SECURITY
 security:
   basic:
