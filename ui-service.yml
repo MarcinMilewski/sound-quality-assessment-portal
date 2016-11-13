@@ -25,6 +25,10 @@ zuul:
           sensitiveHeaders:
           path: /api/**
           stripPrefix: false
+      gateway-service:
+          sensitiveHeaders:
+          path: /auth/**
+          stripPrefix: true
   add-proxy-headers: true
 #SECURITY
 security:
