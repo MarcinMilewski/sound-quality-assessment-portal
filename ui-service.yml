@@ -26,7 +26,7 @@ zuul:
           path: /api/**
           stripPrefix: false
           serviceId: gateway-service
-      gateway-service-auth:
+     gateway-service-auth:
           sensitiveHeaders:
           path: /auth/**
           stripPrefix: true
