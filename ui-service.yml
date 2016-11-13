@@ -21,14 +21,16 @@ eureka:
 # ZULL
 zuul:
   routes:
-     gateway-service:
+     gateway-service_api:
           sensitiveHeaders:
           path: /api/**
           stripPrefix: false
-      gateway-service:
+          serviceId: gateway-service
+      gateway-service-auth:
           sensitiveHeaders:
           path: /auth/**
           stripPrefix: true
+          serviceId: gateway-service
   add-proxy-headers: true
 #SECURITY
 security:
