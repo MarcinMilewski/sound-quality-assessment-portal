@@ -24,7 +24,6 @@ zuul:
       stripPrefix: true
   add-proxy-headers: true
 
-hystrix:command.default.execution.timeout.enabled: false
 #SECURITY
 security:
   basic:
