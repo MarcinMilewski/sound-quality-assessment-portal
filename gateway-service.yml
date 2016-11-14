@@ -24,6 +24,18 @@ zuul:
       stripPrefix: true
   add-proxy-headers: true
 
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: THREAD
+          thread:
+            timeoutInMilliseconds: 10000
+
+ribbon:
+  ReadTimeout: 100000
+  ConnectTimeout: 100000
 #SECURITY
 security:
   basic:
