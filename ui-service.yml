@@ -37,17 +37,12 @@ hystrix:
   command:
     default:
       execution:
+        timeout:
+          enabled: false
         isolation:
           strategy: THREAD
           thread:
             timeoutInMilliseconds: 10000
-
-hystrix:
-  command:
-    default:
-      execution:
-        timeout:
-          enabled: false
 
 ribbon:
   ReadTimeout: 100000
