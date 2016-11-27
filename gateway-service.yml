@@ -28,6 +28,7 @@ zuul:
 hystrix:
   command:
     default:
+      requestLog: enabled
       execution:
         isolation:
           strategy: SEMAPHORE
