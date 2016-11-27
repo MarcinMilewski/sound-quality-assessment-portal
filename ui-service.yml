@@ -42,7 +42,7 @@ hystrix:
         isolation:
           strategy: THREAD
           thread:
-            timeoutInMilliseconds: 10000000
+#            timeoutInMilliseconds: 10000000
 
 
 ribbon:
