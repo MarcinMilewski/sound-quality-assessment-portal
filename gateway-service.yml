@@ -30,9 +30,8 @@ hystrix:
     default:
       execution:
         isolation:
-          strategy: THREAD
-          thread:
-            timeoutInMilliseconds: 10000000
+          strategy: SEMAPHORE
+
 
 ribbon:
   ReadTimeout: 10000000
