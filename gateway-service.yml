@@ -31,7 +31,7 @@ hystrix:
       requestLog: enabled
       execution:
         isolation:
-          strategy: SEMAPHORE
+          strategy: THREAD
           thread:
             timeoutInMilliseconds: 10000000
 
