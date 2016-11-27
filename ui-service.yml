@@ -20,6 +20,7 @@ eureka:
     fetchRegistry: true
 # ZULL
 zuul:
+  servletPath: /zuul
   routes:
      gateway-service_api:
           sensitiveHeaders:

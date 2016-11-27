@@ -13,6 +13,7 @@ eureka:
 # ZULL
 zuul:
   routes:
+    servletPath: /zuul
     auth-service:
       sensitiveHeaders:
       path: /oauth/**
