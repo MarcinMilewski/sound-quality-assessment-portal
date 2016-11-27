@@ -20,6 +20,8 @@ eureka:
     fetchRegistry: true
 # ZULL
 zuul:
+  debug:
+    request: true
   servletPath: /zuul
   routes:
      gateway-service_api:

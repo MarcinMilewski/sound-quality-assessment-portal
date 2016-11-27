@@ -12,6 +12,8 @@ eureka:
     fetchRegistry: true
 # ZULL
 zuul:
+  debug:
+    request: true
   routes:
     servletPath: /zuul
     auth-service:
