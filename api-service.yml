@@ -38,6 +38,12 @@ security:
 # LOGGING
 #logging.level.org.springframework.security: DEBUG
 
+spring:
+    http:
+          multipart:
+            max-file-size: 100MB
+            max-request-size: 100MB
+
 ---
 
 spring:
