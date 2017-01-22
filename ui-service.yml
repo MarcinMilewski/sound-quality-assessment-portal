@@ -12,6 +12,10 @@ server:
 spring:
     aop:
         proxyTargetClass: true
+    http:
+          multipart:
+            max-file-size: 100MB
+            max-request-size: 100MB
 
 # EUREKA
 eureka:
@@ -66,11 +70,6 @@ security:
       id: openid
       serviceId: ${PREFIX:}resource
 
-spring:
-    http:
-          multipart:
-            max-file-size: 100MB
-            max-request-size: 100MB
 # LOGGING
 #logging.level.org.springframework.security: DEBUG
 
