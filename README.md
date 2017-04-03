@@ -5,6 +5,7 @@ Internet portal for audio quality assessment. The web-based application enables 
 
 ## FEATURES:
 * Method based on ITU-R BS.1534 (MUSHRA) - linear 60ms crossfade instead of fade-out/in, up to 12 samples can be used
+![docs/mushra.jpg](docs/mushra.jpg)
 * ABX Test
 * Client side processing using Web Audio API
 * Database integration, user system
