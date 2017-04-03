@@ -14,18 +14,18 @@ Internet portal for audio quality assessment. The web-based application enables 
 * Statistics check (means/confidence intervals/Pearson's chi-squared and binomial test)
 * Authentication and authorization based on OAuth 2.0
 
-## TOOLS:
-Spring Boot/Data/Cloud, Hibernate, Angular 2, Zuul
+## TODO:
+* Polish to English translation of the UI
+* Firefox fixes (currently Chromium/Google Chrome recommended)
+* ...
 
 ## TOOLS:
 Spring Boot/Data/Cloud, Hibernate, Angular 2, Zuul
 
-## MICROSERVICES:
+## MICROSERVICES ARCHITECTURE:
+Project based on SPRING BOOT ANGULAR 2 STARTER (Tomasz Kucharzyk kucharzyk) https://github.com/kucharzyk/spring-angular2-starter
 
 ![docs/diagram.png](docs/diagram.png)
-
-### STANDALONE USAGE WITHOUT DOCKER
-
 
 ### RUNNING IN DEVELOPMENT MODE:
 You should set parameters to your database for API and Auth microservices first. Configuration manual will be announced.
@@ -33,13 +33,16 @@ You should set parameters to your database for API and Auth microservices first.
 To run:
 
 Execute script:
+```
  ./scripts/run-all.py
+```
 
 Or install all dependencies at first manual:
 ```
 mvn clean install -P dev-standalone
 ```
 Run config server in development mode:
+
 ```
 cd sqap-config
 mvn spring-boot:run -P dev-standalone
@@ -84,7 +87,7 @@ mvn spring-boot:run -P dev-standalone
 Proxies for API calls can be configured in proxy.json file.
 Default configuration assumes that your API is running at localhost:8080
 
-## TESTING ANGULAR FRONTEND
+### TESTING ANGULAR FRONTEND
 
 Running unit tests:
 ```
