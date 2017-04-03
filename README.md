@@ -104,3 +104,5 @@ Running e2e tests:
 cd sqap-ui
 npm run e2e
 ```
+### MORE INFORMATION
+* Marcin Milewski, Opracowanie portalu internetowego do oceny jakości dźwięku, Bachelor engineering thesis, Bialystok University of Technology, 2017 (Polish) [pdf](docs/thesis.pdf)
