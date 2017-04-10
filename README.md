@@ -32,6 +32,8 @@ Project based on SPRING BOOT ANGULAR 2 STARTER (Tomasz Kucharzyk kucharzyk) http
 ![docs/diagram.png](docs/diagram.png)
 
 ### RUNNING IN DEVELOPMENT MODE:
+Running with Docker TBA.
+
 You should set parameters to your database for API and Auth microservices first. Configuration manual will be announced.
 
 To run:
